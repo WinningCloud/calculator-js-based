@@ -162,3 +162,10 @@ body{
     background-color: rgb(32, 208, 53);
     font-size: 70px;
 }
+
+.spaceText{
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #566160;
+}

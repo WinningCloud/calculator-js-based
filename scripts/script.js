@@ -67,3 +67,20 @@ function calcBtnClicked(){
 
 const calcBtn = document.querySelector(".calcBtn");
 calcBtn.addEventListener("click", ()=> calcBtnClicked());
+
+
+
+function onClickSpace(){
+    displayStr = "0";
+    updateDisplayText(displayStr);
+}
+
+document.addEventListener("keydown", function(event) {
+  if (event.code === "Space") {
+    // Prevent the default space scroll action
+    event.preventDefault();
+
+    // Call your function here
+    onClickSpace();
+  }
+});
