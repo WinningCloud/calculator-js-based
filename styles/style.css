@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body{
+    background-color: #C5C6C7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: #0B0C10;
+    width: 900px;
+    height: 500px;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+
+}
+
+.numbers{
+    width: 50%;
+    border-radius: 15px;
+}
+
+.calculations{
+    width: 50%;
+    background-color: #1F2833;
+    border-radius: 0 15px 15px 0 ;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.displayOuterBox{
+    background-color: #1F2833;
+    flex: 1;
+    padding: 30px;
+}
+
+
+.operationsBox{
+    background-color: #45A29E;
+    flex: 1;
+}
+
+.displayInnerBox{
+    height: 100%;
+    width: 100%;
+    background-color: #45A29E;
+    border-radius: 15px;
+}
+
+.numBox{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+ 
+}
+
+.numBox > *{
+    background-color: wheat;
+
+}
