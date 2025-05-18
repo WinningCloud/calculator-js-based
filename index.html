@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/script.js"></script>
+    <script src="scripts/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
@@ -15,24 +18,49 @@
     <div class="container">
        <div class="numbers">
         <div class="numBox">
-            <div class="num1">1</div>
-            <div class="num2">2</div>
-            <div class="num3">3</div>
-            <div class="num4">4</div>
-            <div class="num5">5</div>
-            <div class="num6">6</div>
-            <div class="num7">7</div>
-            <div class="num8">8</div>
-            <div class="num9">9</div>
-            <div class="num0">0</div>
+            <div class="row1">
+                <div class="num1">1</div>
+                <div class="num2">2</div>
+                <div class="num3">3</div>                
+            </div>
+            <div class="row2">
+                <div class="num4">4</div>
+                <div class="num5">5</div>
+                <div class="num6">6</div>
+            </div>
+            <div class="row3">
+                <div class="num7">7</div>
+                <div class="num8">8</div>
+                <div class="num9">9</div>
+            </div>
+            <div class="row4">
+                <button class="calcBtn">Calc.</button>
+                <div class="num0">0</div>
+                <button class="eraseBtn">x</button>
+            </div>
+            
+ 
         </div>
-        <div class="controlBox"></div>
-       </div>
+       
+    </div>
        <div class="calculations">
         <div class="displayOuterBox">
-            <div class="displayInnerBox"></div>
+            <div class="displayInnerBox">
+
+            </div>
         </div>
-        <div class="operationsBox"></div>
+        <div class="operationsBox">
+            <div class="operationsRow1">
+                <button class="addBtn">+</button>
+                <button class="subBtn">-</button>
+            </div>
+            <div class="operationsRow2">
+                <button class="multBtn">x</button>
+                <button class="divBtn">÷</button>
+            </div>
+            
+            
+        </div>
        </div>
     </div>
 </body>

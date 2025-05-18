@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'PixelNums';
+    src: url('BeautifulPoliceOfficer-rvv8x.ttf') format('truetype');
+}
+
 
 
 
@@ -49,27 +54,111 @@ body{
 }
 
 
-.operationsBox{
-    background-color: #45A29E;
-    flex: 1;
-}
-
 .displayInnerBox{
     height: 100%;
     width: 100%;
-    background-color: #45A29E;
+    background-color: white;
     border-radius: 15px;
+    padding: 30px;
+    font-size: 30px;
+    font-family: "PixelNums";
 }
 
 .numBox{
-    padding: 15px;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
  
+
+    /* padding: 15px; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 40px;
 }
 
-.numBox > *{
+.numBox > * > *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
     background-color: wheat;
+    border-radius: 100px;
+    /* padding: 20px; */
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 1000;
+    border: 8px solid #45A29E;
+}
 
+.row1 ,.row2 ,.row3, .row4{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 50px;
+    
+}
+
+.eraseBtn , .calcBtn{
+        border-radius: 100%;
+        border: 8px solid #45A29E;
+        padding: 0;
+}
+
+.eraseBtn{
+    background-color: red;
+}
+
+.calcBtn{
+    background-color: greenyellow;
+}
+
+
+
+.operationsBox{
+    background-color: #45A29E;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.operationsRow1, .operationsRow2{
+  
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.operationsBox button{
+    border: none;
+    border-radius: 10px;
+    width: 180px;
+    height: 85px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 60px;
+    font-weight: 1000;
+
+}
+
+.numBox > * > *:hover{
+    background-color: rgb(45, 210, 158);
+        font-size: 35px;
+}
+
+.operationsBox button:hover{
+    background-color: rgb(32, 208, 53);
+    font-size: 70px;
 }
